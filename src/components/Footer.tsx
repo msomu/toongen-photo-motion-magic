@@ -1,0 +1,96 @@
+
+import React from 'react';
+import { Heart, Mail, Twitter, Instagram, Facebook } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-4">
+              <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Toongen
+              </div>
+              <p className="text-gray-400 leading-relaxed">
+                Transform your photos into magical animations with the power of AI. Available on iOS and Android.
+              </p>
+              <div className="flex space-x-4">
+                <Button variant="ghost" size="sm" className="p-2 hover:bg-purple-600">
+                  <Twitter className="w-5 h-5" />
+                </Button>
+                <Button variant="ghost" size="sm" className="p-2 hover:bg-purple-600">
+                  <Instagram className="w-5 h-5" />
+                </Button>
+                <Button variant="ghost" size="sm" className="p-2 hover:bg-purple-600">
+                  <Facebook className="w-5 h-5" />
+                </Button>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">Features</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white transition-colors">AI Animation</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Multiple Styles</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Fast Processing</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">HD Quality</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">Support</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Tutorials</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div id="download">
+              <h4 className="font-semibold mb-4">Download Now</h4>
+              <div className="space-y-3">
+                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                  App Store
+                </Button>
+                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                  Google Play
+                </Button>
+              </div>
+              <div className="mt-4 p-4 bg-gray-800 rounded-lg">
+                <div className="flex items-center space-x-2 text-sm text-gray-400">
+                  <Mail className="w-4 h-4" />
+                  <span>Get updates via email</span>
+                </div>
+                <Button variant="ghost" className="mt-2 text-purple-400 hover:text-purple-300 p-0 h-auto">
+                  Subscribe to newsletter
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="py-8 border-t border-gray-800">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="text-gray-400 text-sm">
+              © 2024 Toongen. All rights reserved.
+            </div>
+            <div className="flex items-center space-x-1 text-gray-400 text-sm">
+              <span>Made with</span>
+              <Heart className="w-4 h-4 text-red-500 fill-current" />
+              <span>for creators worldwide</span>
+            </div>
+            <div className="flex space-x-6 text-sm text-gray-400">
+              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
