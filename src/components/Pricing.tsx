@@ -8,10 +8,10 @@ const Pricing = () => {
     {
       name: "Free Tier",
       price: "₹0",
-      period: "/month",
+      period: "/day",
       description: "Perfect for trying out ToonGen",
       features: [
-        "3 images per month",
+        "3 images per day",
         "Basic cartoon styles",
         "Standard quality"
       ],
@@ -19,10 +19,10 @@ const Pricing = () => {
       popular: false
     },
     {
-      name: "Premium",
-      price: "₹99",
-      period: "/month",
-      description: "Unlimited creativity",
+      name: "Weekly Premium",
+      price: "₹690",
+      period: "/week",
+      description: "Great for regular creators",
       features: [
         "Unlimited images",
         "All premium styles",
@@ -30,6 +30,23 @@ const Pricing = () => {
         "No ads",
         "No watermarks",
         "Priority support"
+      ],
+      cta: "Upgrade Now",
+      popular: false
+    },
+    {
+      name: "Annual Premium",
+      price: "₹2550",
+      period: "/year",
+      description: "Best value for power users",
+      features: [
+        "Unlimited images",
+        "All premium styles",
+        "HD quality exports",
+        "No ads",
+        "No watermarks",
+        "Priority support",
+        "Early access to new features"
       ],
       cta: "Upgrade Now",
       popular: true
@@ -48,7 +65,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <Card 
               key={index} 
