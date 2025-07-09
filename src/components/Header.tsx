@@ -29,7 +29,10 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex">
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6">
+            <Button 
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6"
+              onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
+            >
               Get Started
             </Button>
           </div>
@@ -57,7 +60,10 @@ const Header = () => {
                 Download
               </a>
               <div className="pt-2">
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+                <Button 
+                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white"
+                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
+                >
                   Get Started
                 </Button>
               </div>

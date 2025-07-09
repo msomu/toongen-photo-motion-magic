@@ -52,10 +52,16 @@ const Footer = () => {
             <div id="download">
               <h4 className="font-semibold mb-4">Download Now</h4>
               <div className="space-y-3">
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                <Button 
+                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
+                  onClick={() => window.open('https://apps.apple.com/in/app/toongen/id6745421916', '_blank')}
+                >
                   App Store
                 </Button>
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                <Button 
+                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
+                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
+                >
                   Google Play
                 </Button>
               </div>

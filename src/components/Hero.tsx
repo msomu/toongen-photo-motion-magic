@@ -31,6 +31,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
+                onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
               >
                 Generate Your Toon
               </Button>

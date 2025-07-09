@@ -69,6 +69,7 @@ const Demo = () => {
                   <Button 
                     size="lg" 
                     className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white"
+                    onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
                   >
                     <Play className="w-5 h-5 mr-2" />
                     Try It Now
