@@ -16,14 +16,14 @@ const Hero = () => {
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Transform Your
+                Turn your selfies into
                 <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent block">
-                  Photos into Magic
+                  anime in seconds
                 </span>
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Turn any photo into stunning animations with AI-powered technology. Create cartoon avatars, animated stories, and bring your memories to life.
+                AI-powered cartoon image generator. Fast, fun, and free to try.
               </p>
             </div>
 
@@ -32,8 +32,7 @@ const Hero = () => {
                 size="lg" 
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
               >
-                <Download className="w-5 h-5 mr-2" />
-                Download Now
+                Generate Your Toon
               </Button>
               
               <Button 

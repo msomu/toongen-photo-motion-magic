@@ -6,34 +6,24 @@ import { Card, CardContent } from '@/components/ui/card';
 const Features = () => {
   const features = [
     {
-      icon: Sparkles,
-      title: "AI-Powered Magic",
-      description: "Advanced AI technology transforms your photos into stunning animations with just one tap."
+      icon: Palette,
+      title: "Multiple Styles",
+      description: "🎨 Multiple Styles (anime, comic, sketch)"
     },
     {
       icon: Zap,
-      title: "Lightning Fast",
-      description: "Get your animated results in seconds, not minutes. Our optimized engine works at incredible speed."
-    },
-    {
-      icon: Palette,
-      title: "Multiple Styles",
-      description: "Choose from cartoon, anime, watercolor, and many other artistic styles to match your vision."
-    },
-    {
-      icon: Camera,
-      title: "Smart Detection",
-      description: "Automatically detects faces, objects, and scenes to create the most accurate animations."
-    },
-    {
-      icon: Share2,
-      title: "Easy Sharing",
-      description: "Share your creations instantly on social media or save them to your gallery in high quality."
+      title: "Fast Generation",
+      description: "⚡ Fast generation (3–5 seconds)"
     },
     {
       icon: Heart,
-      title: "Made with Love",
-      description: "Crafted by artists and engineers who are passionate about bringing your memories to life."
+      title: "Private & Secure",
+      description: "🔒 Private & secure"
+    },
+    {
+      icon: Sparkles,
+      title: "Unlimited Premium",
+      description: "🔄 Unlimited with premium"
     }
   ];
 
