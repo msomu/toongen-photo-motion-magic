@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, Mail, Twitter, Instagram, Facebook } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -16,17 +16,6 @@ const Footer = () => {
               <p className="text-gray-400 leading-relaxed">
                 Transform your photos into magical animations with the power of AI. Available on iOS and Android.
               </p>
-              <div className="flex space-x-4">
-                <Button variant="ghost" size="sm" className="p-2 hover:bg-purple-600">
-                  <Twitter className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="sm" className="p-2 hover:bg-purple-600">
-                  <Instagram className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="sm" className="p-2 hover:bg-purple-600">
-                  <Facebook className="w-5 h-5" />
-                </Button>
-              </div>
             </div>
 
             <div>
@@ -42,8 +31,8 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+                <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Support</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
               </ul>
@@ -65,15 +54,6 @@ const Footer = () => {
                   Google Play
                 </Button>
               </div>
-              <div className="mt-4 p-4 bg-gray-800 rounded-lg">
-                <div className="flex items-center space-x-2 text-sm text-gray-400">
-                  <Mail className="w-4 h-4" />
-                  <span>Get updates via email</span>
-                </div>
-                <Button variant="ghost" className="mt-2 text-purple-400 hover:text-purple-300 p-0 h-auto">
-                  Subscribe to newsletter
-                </Button>
-              </div>
             </div>
           </div>
         </div>
@@ -86,11 +66,11 @@ const Footer = () => {
             <div className="flex items-center space-x-1 text-gray-400 text-sm">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>by msomu</span>
+              <a href="https://msomu.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">by msomu</a>
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>

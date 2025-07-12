@@ -19,13 +19,15 @@ const Demo = () => {
     {
       title: "Landscape Magic",
       description: "Turn scenic photos into animated masterpieces",
-      beforeImage: "photo-1488590528505-98d2b5aba04b",
+      beforeImage: "hill-original",
+      afterImage: "hill-anime",
       style: "Watercolor Style"
     },
     {
       title: "Pet Animation",
       description: "Bring your furry friends to life with adorable animations",
-      beforeImage: "photo-1581091226825-a6a2a5aee158",
+      beforeImage: "pet-original",
+      afterImage: "pet-anime",
       style: "Anime Style"
     }
   ];
@@ -100,7 +102,11 @@ const Demo = () => {
                     <div className="text-sm font-medium text-gray-700 text-center">Before</div>
                     <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden">
                       <img 
-                        src="/lovable-uploads/f209f383-9be9-48c9-9344-7e20febe208f.png"
+                        src={activeDemo === 2 
+                          ? "/lovable-uploads/pet-original.jpg" 
+                          : activeDemo === 1
+                            ? "/lovable-uploads/hill-original.jpg"
+                            : "/lovable-uploads/f209f383-9be9-48c9-9344-7e20febe208f.png"}
                         alt="Before animation"
                         className="w-full h-full object-cover"
                       />
@@ -111,7 +117,11 @@ const Demo = () => {
                     <div className="text-sm font-medium text-gray-700 text-center">After</div>
                     <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden">
                       <img 
-                        src="/lovable-uploads/169fcbd7-fd85-437d-bac1-17d2f9bdce7f.png"
+                        src={activeDemo === 2 
+                          ? "/lovable-uploads/pet-anime.png" 
+                          : activeDemo === 1
+                            ? "/lovable-uploads/hill-anime.jpg"
+                            : "/lovable-uploads/169fcbd7-fd85-437d-bac1-17d2f9bdce7f.png"}
                         alt="After animation"
                         className="w-full h-full object-cover"
                       />
