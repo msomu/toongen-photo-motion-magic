@@ -2,9 +2,11 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import PlatformModal from './PlatformModal';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isPlatformModalOpen, setIsPlatformModalOpen] = React.useState(false);
 
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
@@ -31,7 +33,7 @@ const Header = () => {
           <div className="hidden md:flex">
             <Button 
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6"
-              onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
+              onClick={() => setIsPlatformModalOpen(true)}
             >
               Get Started
             </Button>
@@ -62,7 +64,7 @@ const Header = () => {
               <div className="pt-2">
                 <Button 
                   className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white"
-                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
+                  onClick={() => setIsPlatformModalOpen(true)}
                 >
                   Get Started
                 </Button>
@@ -71,6 +73,11 @@ const Header = () => {
           </div>
         )}
       </div>
+      
+      <PlatformModal 
+        isOpen={isPlatformModalOpen} 
+        onClose={() => setIsPlatformModalOpen(false)} 
+      />
     </header>
   );
 };

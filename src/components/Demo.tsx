@@ -2,9 +2,11 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Play, ArrowRight } from 'lucide-react';
+import PlatformModal from './PlatformModal';
 
 const Demo = () => {
   const [activeDemo, setActiveDemo] = React.useState(0);
+  const [isPlatformModalOpen, setIsPlatformModalOpen] = React.useState(false);
   
   const demos = [
     {
@@ -69,7 +71,7 @@ const Demo = () => {
                   <Button 
                     size="lg" 
                     className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white"
-                    onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
+                    onClick={() => setIsPlatformModalOpen(true)}
                   >
                     <Play className="w-5 h-5 mr-2" />
                     Try It Now
@@ -130,6 +132,11 @@ const Demo = () => {
           </div>
         </div>
       </div>
+      
+      <PlatformModal 
+        isOpen={isPlatformModalOpen} 
+        onClose={() => setIsPlatformModalOpen(false)} 
+      />
     </section>
   );
 };

@@ -2,8 +2,11 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check } from 'lucide-react';
+import PlatformModal from './PlatformModal';
 
 const Pricing = () => {
+  const [isPlatformModalOpen, setIsPlatformModalOpen] = React.useState(false);
+  
   const plans = [
     {
       name: "Free Tier",
@@ -106,6 +109,7 @@ const Pricing = () => {
                     : 'border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white'
                   }`}
                   variant={plan.popular ? "default" : "outline"}
+                  onClick={() => setIsPlatformModalOpen(true)}
                 >
                   {plan.cta}
                 </Button>
@@ -114,6 +118,11 @@ const Pricing = () => {
           ))}
         </div>
       </div>
+      
+      <PlatformModal 
+        isOpen={isPlatformModalOpen} 
+        onClose={() => setIsPlatformModalOpen(false)} 
+      />
     </section>
   );
 };

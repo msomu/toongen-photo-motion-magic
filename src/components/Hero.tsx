@@ -2,8 +2,11 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Play, Download, Star } from 'lucide-react';
+import PlatformModal from './PlatformModal';
 
 const Hero = () => {
+  const [isPlatformModalOpen, setIsPlatformModalOpen] = React.useState(false);
+
   return (
     <section className="pt-20 pb-16 min-h-screen flex items-center bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +34,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
-                onClick={() => window.open('https://play.google.com/store/apps/details?id=com.msomu.toongen', '_blank')}
+                onClick={() => setIsPlatformModalOpen(true)}
               >
                 Generate Your Toon
               </Button>
@@ -101,6 +104,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      <PlatformModal 
+        isOpen={isPlatformModalOpen} 
+        onClose={() => setIsPlatformModalOpen(false)} 
+      />
     </section>
   );
 };
