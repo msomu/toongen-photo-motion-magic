@@ -105,7 +105,7 @@ const Demo = () => {
                     <div className="text-sm font-medium text-gray-700 text-center">Before</div>
                     <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden">
                       <img 
-                        src={`https://images.unsplash.com/${demos[activeDemo].beforeImage}?auto=format&fit=crop&w=400&h=400`}
+                        src="/lovable-uploads/f209f383-9be9-48c9-9344-7e20febe208f.png"
                         alt="Before animation"
                         className="w-full h-full object-cover"
                       />
@@ -114,11 +114,12 @@ const Demo = () => {
                   
                   <div className="space-y-2">
                     <div className="text-sm font-medium text-gray-700 text-center">After</div>
-                    <div className="aspect-square bg-gradient-to-br from-purple-200 to-pink-200 rounded-2xl flex items-center justify-center animate-pulse">
-                      <div className="text-center text-purple-700">
-                        <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full mx-auto mb-2 animate-bounce"></div>
-                        <p className="text-sm font-medium">Animated!</p>
-                      </div>
+                    <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/169fcbd7-fd85-437d-bac1-17d2f9bdce7f.png"
+                        alt="After animation"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
