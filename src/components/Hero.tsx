@@ -51,16 +51,16 @@ const Hero = () => {
 
             <div className="flex items-center space-x-8 pt-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">50K+</div>
-                <div className="text-sm text-gray-600">Downloads</div>
+                <div className="text-2xl font-bold text-gray-900">AI-Powered</div>
+                <div className="text-sm text-gray-600">Technology</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">4.8★</div>
-                <div className="text-sm text-gray-600">App Rating</div>
+                <div className="text-2xl font-bold text-gray-900">14+ Styles</div>
+                <div className="text-sm text-gray-600">Available</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">1M+</div>
-                <div className="text-sm text-gray-600">Animations Created</div>
+                <div className="text-2xl font-bold text-gray-900">Instant</div>
+                <div className="text-sm text-gray-600">Results</div>
               </div>
             </div>
           </div>
@@ -75,11 +75,12 @@ const Hero = () => {
                   </div>
                   
                   <div className="space-y-3">
-                    <div className="h-32 bg-gray-100 rounded-xl flex items-center justify-center">
-                      <div className="text-gray-500 text-center">
-                        <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-2"></div>
-                        <p className="text-sm">Your Photo Here</p>
-                      </div>
+                    <div className="h-32 bg-gray-100 rounded-xl overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/f209f383-9be9-48c9-9344-7e20febe208f.png"
+                        alt="Before photo"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     
                     <div className="flex justify-center">
@@ -88,11 +89,12 @@ const Hero = () => {
                       </div>
                     </div>
                     
-                    <div className="h-32 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full mx-auto mb-2 animate-pulse"></div>
-                        <p className="text-sm text-purple-700 font-medium">Animated Magic!</p>
-                      </div>
+                    <div className="h-32 bg-gray-100 rounded-xl overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/169fcbd7-fd85-437d-bac1-17d2f9bdce7f.png"
+                        alt="After anime transformation"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>

@@ -77,11 +77,6 @@ const Demo = () => {
                     <Play className="w-5 h-5 mr-2" />
                     Try It Now
                   </Button>
-                  
-                  <Button variant="outline" size="lg">
-                    View More Examples
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Button>
                 </div>
 
                 <div className="flex space-x-2 pt-4">

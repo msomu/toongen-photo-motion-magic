@@ -3,18 +3,21 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Star } from 'lucide-react';
 
 const Testimonials = () => {
-  const testimonials = [
+  const features = [
     {
-      text: "Best AI cartoon app I've used!",
-      author: "Sarah M."
+      title: "AI-Powered Technology",
+      description: "Advanced machine learning creates stunning anime transformations",
+      icon: "🤖"
     },
     {
-      text: "Made my whole family into anime",
-      author: "Raj P."
+      title: "14+ Art Styles",
+      description: "From anime to cartoon, choose your perfect style",
+      icon: "🎨"
     },
     {
-      text: "So easy, even my mom used it",
-      author: "Alex K."
+      title: "Instant Results",
+      description: "Get your animated avatar in just seconds",
+      icon: "⚡"
     }
   ];
 
@@ -23,31 +26,23 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            What People Say
+            Why Choose Toongen?
           </h2>
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
-            ))}
-            <span className="text-lg font-medium text-gray-700 ml-2">4.9 on Play Store</span>
-          </div>
-          <p className="text-gray-600">Loved by 10,000+ users</p>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Experience the future of photo transformation with our cutting-edge AI technology
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="text-center">
-              <CardContent className="p-6">
-                <div className="flex justify-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-700 text-lg mb-4 italic">
-                  "{testimonial.text}"
-                </p>
-                <p className="text-gray-500 font-medium">
-                  {testimonial.author}
+          {features.map((feature, index) => (
+            <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
                 </p>
               </CardContent>
             </Card>
