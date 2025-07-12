@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Play, Download, Star } from 'lucide-react';
+import { Star } from 'lucide-react';
 import PlatformModal from './PlatformModal';
 
 const Hero = () => {
@@ -30,22 +30,13 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex justify-center sm:justify-start">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-10 py-3 text-lg transition-all duration-300 hover:scale-105 shadow-lg"
                 onClick={() => setIsPlatformModalOpen(true)}
               >
                 Generate Your Toon
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
-              >
-                <Play className="w-5 h-5 mr-2" />
-                Watch Demo
               </Button>
             </div>
 
