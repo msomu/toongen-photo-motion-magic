@@ -1,4 +1,5 @@
 
+// Demo component
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Play, ArrowRight } from 'lucide-react';
