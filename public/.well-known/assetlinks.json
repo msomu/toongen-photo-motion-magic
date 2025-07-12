@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.msomu.toongen",
+      "sha256_cert_fingerprints": [
+        "4C:11:65:4B:EA:30:D1:D2:7E:8A:84:61:30:2D:BF:C4:09:C2:BD:49:89:57:3B:49:90:FB:44:F0:D7:F7:8C:26"
+      ]
+    }
+  }
+]

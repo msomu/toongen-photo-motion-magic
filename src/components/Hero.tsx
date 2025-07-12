@@ -77,7 +77,7 @@ const Hero = () => {
                   <div className="space-y-3">
                     <div className="h-32 bg-gray-100 rounded-xl overflow-hidden">
                       <img 
-                        src="/lovable-uploads/f209f383-9be9-48c9-9344-7e20febe208f.png"
+                        src="/lovable-uploads/portrait-original.png"
                         alt="Before photo"
                         className="w-full h-full object-cover"
                       />
@@ -91,7 +91,7 @@ const Hero = () => {
                     
                     <div className="h-32 bg-gray-100 rounded-xl overflow-hidden">
                       <img 
-                        src="/lovable-uploads/169fcbd7-fd85-437d-bac1-17d2f9bdce7f.png"
+                        src="/lovable-uploads/portrait-anime.png"
                         alt="After anime transformation"
                         className="w-full h-full object-cover"
                       />
