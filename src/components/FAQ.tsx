@@ -14,7 +14,7 @@ const FAQ = () => {
     },
     {
       question: "Do I need to pay to use it?",
-      answer: "ToonGen offers 3 free images per month. For unlimited access to all premium styles and features, upgrade to our Premium plan for just ₹99/month."
+      answer: "ToonGen offers 3 free images per day. For unlimited access to all premium styles and features, upgrade to our Premium plans starting at ₹690/week or ₹2550/year."
     },
     {
       question: "What about privacy?",

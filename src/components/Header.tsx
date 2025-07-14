@@ -3,10 +3,24 @@ import React from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PlatformModal from './PlatformModal';
+import { getAppStoreUrl } from '@/utils/deviceDetection';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isPlatformModalOpen, setIsPlatformModalOpen] = React.useState(false);
+
+  const handleDownloadClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const appStoreUrl = getAppStoreUrl();
+    
+    if (appStoreUrl) {
+      // If on mobile, redirect directly to the appropriate app store
+      window.location.href = appStoreUrl;
+    } else {
+      // If on desktop, show the platform selection modal
+      setIsPlatformModalOpen(true);
+    }
+  };
 
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
@@ -25,7 +39,7 @@ const Header = () => {
             <a href="#demo" className="text-gray-700 hover:text-purple-600 transition-colors duration-200">
               Demo
             </a>
-            <a href="#download" className="text-gray-700 hover:text-purple-600 transition-colors duration-200">
+            <a href="#" onClick={handleDownloadClick} className="text-gray-700 hover:text-purple-600 transition-colors duration-200">
               Download
             </a>
           </nav>
@@ -58,7 +72,7 @@ const Header = () => {
               <a href="#demo" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
                 Demo
               </a>
-              <a href="#download" className="block px-3 py-2 text-gray-700 hover:text-purple-600">
+              <a href="#" onClick={handleDownloadClick} className="block px-3 py-2 text-gray-700 hover:text-purple-600">
                 Download
               </a>
               <div className="pt-2">

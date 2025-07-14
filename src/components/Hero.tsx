@@ -1,11 +1,24 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Star } from 'lucide-react';
+import { Star, Download } from 'lucide-react';
 import PlatformModal from './PlatformModal';
+import { detectDevice, getAppStoreUrl } from '@/utils/deviceDetection';
 
 const Hero = () => {
   const [isPlatformModalOpen, setIsPlatformModalOpen] = React.useState(false);
+
+  const handleDownloadClick = () => {
+    const appStoreUrl = getAppStoreUrl();
+    
+    if (appStoreUrl) {
+      // If on mobile, redirect directly to the appropriate app store
+      window.location.href = appStoreUrl;
+    } else {
+      // If on desktop, show the platform selection modal
+      setIsPlatformModalOpen(true);
+    }
+  };
 
   return (
     <section className="pt-20 pb-16 min-h-screen flex items-center bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50">
@@ -30,13 +43,21 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="flex justify-center sm:justify-start">
+            <div className="flex justify-center sm:justify-start space-x-4">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-10 py-3 text-lg transition-all duration-300 hover:scale-105 shadow-lg"
                 onClick={() => setIsPlatformModalOpen(true)}
               >
                 Generate Your Toon
+              </Button>
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2"
+                onClick={handleDownloadClick}
+              >
+                <Download className="w-5 h-5" />
+                Download App
               </Button>
             </div>
 

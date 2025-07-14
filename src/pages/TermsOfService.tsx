@@ -21,7 +21,7 @@ const TermsOfService = () => {
             To use the photo-to-cartoon conversion feature, users need to purchase a premium subscription.
           </p>
           <p>
-            a. We offer two subscription models:
+            a. We offer two subscription models: Weekly Premium (₹690/week) and Annual Premium (₹2550/year).
           </p>
           <p>
             While premium users have unlimited access to the photo-to-cartoon conversion features, fair usage policies may apply. To ensure a high-quality experience for all users, rate limits may be implemented if usage significantly exceeds typical patterns. These limits are designed to be generous and should not impact regular usage.
